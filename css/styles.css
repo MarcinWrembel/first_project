@@ -94,20 +94,19 @@ body {
   color: var(--text-color);
 }
 
-
 .logo {
-font-family: 'Raleway';
-font-weight: 700;
-font-size: 26px;
-line-height: 1.19;
-letter-spacing: 0.03em;
-color: #2196F3;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #2196f3;
 }
 
 .logo-element1 {
-    color:#000000;
+  color: #000000;
 }
 
-.logo-element1 {
-    color:#FFFFFF;
+.logo-element2 {
+  color: #ffffff;
 }
