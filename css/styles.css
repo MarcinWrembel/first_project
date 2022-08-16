@@ -28,11 +28,11 @@ body {
   height: 252px;
 }
 
-.list-stylization {
+.list-style {
   list-style-type: none;
 }
 
-.first-header {
+.main-first-header {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -74,14 +74,14 @@ body {
   letter-spacing: 0.03em;
 }
 
-.header-lorem {
+.list-style-header {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-color);
 }
 
-.lorem-description {
+.list-style-description {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
@@ -93,6 +93,11 @@ body {
 
 .link-custom:focus,
 .link-custom:hover {
+  color: var(--link-color);
+}
+
+.link-portfolio,
+.link-studio {
   color: var(--link-color);
 }
 
@@ -193,7 +198,7 @@ body {
 }
 
 .logo {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -201,10 +206,10 @@ body {
   color: #2196f3;
 }
 
-.logo-element1 {
+.logo-black {
   color: #000000;
 }
 
-.logo-element2 {
+.logo-white {
   color: #ffffff;
 }
