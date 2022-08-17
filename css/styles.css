@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', 'Raleway', sans-serif;
   background-color: var(--background-color);
   color: #757575;
   font-size: 14px;
@@ -28,7 +28,7 @@ body {
   height: 252px;
 }
 
-.list-style {
+.list {
   list-style-type: none;
 }
 
@@ -42,7 +42,7 @@ body {
   color: #ffffff;
 }
 
-.font-header-style {
+.font-header {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -58,7 +58,7 @@ body {
   color: var(--text-color);
 }
 
-.third-header-studio {
+.third-header {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -67,37 +67,36 @@ body {
   color: var(--text-color);
 }
 
-.third-header-description {
+.third-header-desc {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
 }
 
-.list-style-header {
+.list-header {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-color);
 }
 
-.list-style-description {
+.list-description {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
-.link-custom {
+.link {
   text-decoration: none;
   color: #757575;
 }
 
-.link-custom:focus,
-.link-custom:hover {
+.link:focus,
+.link:hover {
   color: var(--link-color);
 }
 
-.link-portfolio,
-.link-studio {
+.link.active {
   color: var(--link-color);
 }
 
@@ -108,21 +107,20 @@ body {
   margin-right: auto;
 }
 
-.button-studio {
+.button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   background-color: var(--button-background);
   color: var(--button-color);
-
   width: 200px;
   height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 
-.team-container {
+.section--gray {
   background-color: #f5f4fa;
 }
 
@@ -145,29 +143,28 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.button-portfolio {
+.button-grey {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
-
   width: 121px;
   height: 38px;
   background-color: var(--button-background-std);
   border-radius: 4px;
 }
 
-.button-portfolio:focus,
-.button-portfolio:hover {
+.button-grey:focus,
+.button-grey:hover {
   background-color: var(--button-background);
   color: var(--button-color);
   outline-style: none;
 }
 
-.button-studio,
-.button-portfolio {
+.button,
+.button-grey {
   cursor: pointer;
   border-style: none;
 }
@@ -183,7 +180,7 @@ body {
   border: 1px solid #eeeeee;
 }
 
-.header-portfolio {
+.fourth-header {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -191,7 +188,7 @@ body {
   color: var(--text-color);
 }
 
-.header-portfolio-desc {
+.fourth-header-desc {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
