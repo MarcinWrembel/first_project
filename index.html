@@ -10,135 +10,152 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/modern-normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
+
     <title>Studio</title>
 </head>
 
 <body>
-    <header>
+    <header class="header container">
         <a class="link logo" href="./index.html">Web<span class="logo-black">Studio</span></a>
-        <nav>
+        <nav class="navigation">
             <ul class="list font-header">
                 <li><a class="link active" href="./index.html" rel="noopener noreferrer">Agencja</a></li>
                 <li><a class="link" href="./portfolio.html" rel="noopener noreferrer">Portfolio</a></li>
                 <li><a class="link" href="" rel="noopener noreferrer">Kontakt</a></li>
             </ul>
         </nav>
-        <a class="link" href="mailto:info@devstudio.com" rel="noopener noreferrer">info@devstudio.com</a>
-        <a class="link" href="tel:+48111111111" rel="noopener noreferrer">+48 111 111 111</a>
+        <div class="contact">
+            <a class="link" href="mailto:info@devstudio.com" rel="noopener noreferrer">info@devstudio.com</a>
+            <a class="link" href="tel:+48111111111" rel="noopener noreferrer">+48 111 111 111</a>
+        </div>
     </header>
     <main>
-        <section class="section-main">
-            <h1 class="main-first-header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU </h1>
+        <section class="section__top container">
+            <h1 class="section__top__header">EFEKTYWNE ROZWIĄZANIA <p>DLA WASZEGO BIZNESU</p>
+            </h1>
             <button class="button" type="button">Zamów usługę</button>
         </section>
-        <section>
-
+        <section class="section container">
             <ul class="list">
                 <li>
-                    <h3 class="list-header">LOREM IPSUM</h3>
-                    <p class="list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu
+                    <h3 class="list__heading">LOREM IPSUM</h3>
+                    <p class="list__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                        arcu
                         sem. Sed non sodales dui.
-                        Interdum et malesuada>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem.
+                        Interdum et malesuada>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu
+                        sem.
                         Sed non sodales dui.
                         Interdum et malesuada
                     </p>
                 </li>
                 <li>
-                    <h3 class="list-header">LOREM IPSUM</h3>
-                    <p class="list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu
+                    <h3 class="list__heading">LOREM IPSUM</h3>
+                    <p class="list__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                        arcu
                         sem. Sed non sodales dui.
-                        Interdum et malesuada>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem.
+                        Interdum et malesuada>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu
+                        sem.
                         Sed non sodales dui.
                         Interdum et malesuada
                     </p>
                 </li>
                 <li>
-                    <h3 class="list-header">LOREM IPSUM</h3>
-                    <p class="list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu
+                    <h3 class="list__heading">LOREM IPSUM</h3>
+                    <p class="list__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                        arcu
                         sem. Sed non sodales dui.
-                        Interdum et malesuada>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem.
+                        Interdum et malesuada>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu
+                        sem.
                         Sed non sodales dui.
                         Interdum et malesuada
                     </p>
                 </li>
                 <li>
-                    <h3 class="list-header">LOREM IPSUM</h3>
-                    <p class="list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu
+                    <h3 class="list__heading">LOREM IPSUM</h3>
+                    <p class="list__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                        arcu
                         sem. Sed non sodales dui.
-                        Interdum et malesuada>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem.
+                        Interdum et malesuada>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu
+                        sem.
                         Sed non sodales dui.
                         Interdum et malesuada
                     </p>
                 </li>
             </ul>
         </section>
-        <section>
-            <h2 class="second-header">Czym się zajmujemy</h2>
+        <section class="section container">
+            <h2 class="section__heading">Czym się zajmujemy</h2>
             <ul class="list">
-                <li><img class="image-stylization" src="./images/image1.jpg" alt="code typing" width="374" height="297">
+                <li><img class="list__image" src="./images/image1.jpg" alt="code typing" width="374" height="297">
                 </li>
-                <li><img class="image-stylization" src="./images/image2.jpg" alt="mobile aplication settings"
-                        width="374" height="297"></li>
-                <li><img class="image-stylization" src="./images/image3.jpg" alt="color settings" width="374"
+                <li><img class="list__image" src="./images/image2.jpg" alt="mobile aplication settings" width="374"
                         height="297"></li>
+                <li><img class="list__image" src="./images/image3.jpg" alt="color settings" width="374" height="297">
+                </li>
             </ul>
         </section>
-        <section class="section--gray">
-            <h2 class="second-header">Nasz zespół</h2>
-            <ul class="list">
-                <li>
-                    <figure class="image-container"> <img class="image-stylization" src="./images/person1.jpg"
-                            alt="Product Designer photo" width="270" height="260">
-                        <figcaption>
-                            <h3 class="third-header">John Doe</h3>
-                            <p class="third-header-desc">Product Designer</p>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure class="image-container">
-                        <img class="image-stylization" src="./images/person2.jpg" alt="Frontend Developer photo"
-                            width="270" height="260">
-                        <figcaption>
-                            <h3 class="third-header">John Doe</h3>
-                            <p class="third-header-desc">Frontend Developer</p>
-                        </figcaption>
+        <section class="section section--gray">
+            <div class="container">
+                <h2 class="section__heading">Nasz zespół</h2>
+                <ul class="list">
+                    <li>
+                        <figure class="image__container"> <img class="list__image" src="./images/person1.jpg"
+                                alt="Product Designer photo" width="270" height="260">
+                            <figcaption>
+                                <h3 class="third-header">John Doe</h3>
+                                <p class="third-header-desc">Product Designer</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="image__container">
+                            <img class="list__image" src="./images/person2.jpg" alt="Frontend Developer photo"
+                                width="270" height="260">
+                            <figcaption>
+                                <h3 class="third-header">John Doe</h3>
+                                <p class="third-header-desc">Frontend Developer</p>
+                            </figcaption>
 
-                    </figure>
-                </li>
-                <li>
-                    <figure class="image-container">
-                        <img class="image-stylization" src="./images/person3.jpg" alt="Marketing person photo"
-                            width="270" height="260">
-                        <figcaption>
-                            <h3 class="third-header">John Doe</h3>
-                            <p class="third-header-desc">Marketing</p>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure class="image-container">
-                        <img class="image-stylization" src="./images/person4.jpg" alt="UI Designer photo" width="270"
-                            height="215">
-                        <figcaption>
-                            <h3 class="third-header">John Doe</h3>
-                            <p class="third-header-desc">UI Designer</p>
-                        </figcaption>
-                    </figure>
-                </li>
-            </ul>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="image__container">
+                            <img class="list__image" src="./images/person3.jpg" alt="Marketing person photo" width="270"
+                                height="260">
+                            <figcaption>
+                                <h3 class="third-header">John Doe</h3>
+                                <p class="third-header-desc">Marketing</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="image__container">
+                            <img class="list__image" src="./images/person4.jpg" alt="UI Designer photo" width="270"
+                                height="260">
+                            <figcaption>
+                                <h3 class="third-header">John Doe</h3>
+                                <p class="third-header-desc">UI Designer</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
-    <footer class="section-footer">
-        <a class="link logo" href="./index.html">Web<span class="logo-white">Studio</span></a>
-        <address>
-            <p class="location">m. Warszawa, Aleje Jerozolimskie 21</p>
-            <a class="link location-link" href="mailto:info@example.com" rel="noopener noreferrer">info@example.com
-            </a>
-            <a class="link location-link" href="tel:+48111111111" rel="noopener noreferrer">+48 111 111 111
-            </a>
-        </address>
+    <footer class="section__footer ">
+        <div class="container">
+            <a class="link logo" href="./index.html">Web<span class="logo-white">Studio</span></a>
+            <address>
+                <p class="location">m. Warszawa, Aleje Jerozolimskie 21</p>
+                <a class="link location-link" href="mailto:info@example.com" rel="noopener noreferrer">info@example.com
+                </a>
+                <a class="link location-link" href="tel:+48111111111" rel="noopener noreferrer">+48 111 111 111
+                </a>
+            </address>
+        </div>
     </footer>
 </body>
 
