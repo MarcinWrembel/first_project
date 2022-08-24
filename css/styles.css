@@ -7,15 +7,15 @@
   --button-color: #ffffff;
   --section-background2: #2f303a;
 }
-.container {
-  width: 1200px;
-  margin: 0 auto;
-}
 body {
   font-family: 'Roboto', 'Raleway', sans-serif;
   background-color: var(--background-color);
   color: #757575;
   font-size: 14px;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
 }
 .section__top {
   background-color: var(--section-background2);
@@ -26,6 +26,7 @@ body {
   padding: 200px 0 210px;
   width: 100%;
 }
+
 .section__top__header {
   font-weight: 900;
   font-size: 44px;
@@ -68,9 +69,9 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  column-gap: 30px;
+  gap: 30px;
+  flex-wrap: wrap;
 }
-
 p {
   margin: 0;
 }
@@ -84,6 +85,7 @@ p {
 .list__description {
   line-height: 1.71;
   letter-spacing: 0.03em;
+  width: 270px;
 }
 
 .list__image {
@@ -101,7 +103,7 @@ p {
   column-gap: 50px;
 }
 
-.third-header {
+.image__container__heading {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -110,7 +112,7 @@ p {
   color: var(--text-color);
   margin: 30px 0 10px;
 }
-.third-header-desc {
+.image__container__desc {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -152,12 +154,12 @@ p {
   color: #ffffff;
   margin: 20px 0 9px;
 }
-.location-link {
+.location__link {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.button-grey {
+.button--grey {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -168,37 +170,49 @@ p {
   width: 121px;
   background-color: var(--button-background-std);
   border-radius: 4px;
+  margin: 94px 0 50px;
+  padding: 0;
 }
-.button-grey:focus,
-.button-grey:hover {
+.button--gap {
+  column-gap: 9px;
+}
+.button--grey:focus,
+.button--grey:hover {
   background-color: var(--button-background);
   color: var(--button-color);
   outline-style: none;
 }
 .button,
-.button-grey {
+.button--grey {
   cursor: pointer;
   border-style: none;
 }
 .line {
   border: 1px solid #ececec;
+  top: 80px;
 }
-.image-container2 {
+.image__container2 {
   width: 370px;
   background-color: var(--background-color);
   border: 1px solid #eeeeee;
+  margin: 0;
 }
-.fourth-header {
+.image__container2__heading {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--text-color);
+  margin: 20px 24px 4px;
 }
-.fourth-header-desc {
+.image__container2__desc {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+  margin: 0 24px 4px;
+}
+.container__products{
+  margin-bottom: 94px;
 }
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -208,10 +222,10 @@ p {
   letter-spacing: 0.03em;
   color: #2196f3;
 }
-.logo-black {
+.logo--black {
   color: #000000;
 }
-.logo-white {
+.logo--white {
   color: #ffffff;
 }
 .header {

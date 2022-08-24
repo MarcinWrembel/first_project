@@ -11,7 +11,10 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="./css/modern-normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+        integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="./css/styles.css">
 
     <title>Studio</title>
@@ -19,7 +22,7 @@
 
 <body>
     <header class="header container">
-        <a class="link logo" href="./index.html">Web<span class="logo-black">Studio</span></a>
+        <a class="link logo" href="./index.html">Web<span class="logo--black">Studio</span></a>
         <nav class="navigation">
             <ul class="list font-header">
                 <li><a class="link active" href="./index.html" rel="noopener noreferrer">Agencja</a></li>
@@ -38,53 +41,55 @@
             </h1>
             <button class="button" type="button">Zamów usługę</button>
         </section>
-        <section class="section container">
-            <ul class="list">
-                <li>
-                    <h3 class="list__heading">LOREM IPSUM</h3>
-                    <p class="list__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-                        arcu
-                        sem. Sed non sodales dui.
-                        Interdum et malesuada>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu
-                        sem.
-                        Sed non sodales dui.
-                        Interdum et malesuada
-                    </p>
-                </li>
-                <li>
-                    <h3 class="list__heading">LOREM IPSUM</h3>
-                    <p class="list__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-                        arcu
-                        sem. Sed non sodales dui.
-                        Interdum et malesuada>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu
-                        sem.
-                        Sed non sodales dui.
-                        Interdum et malesuada
-                    </p>
-                </li>
-                <li>
-                    <h3 class="list__heading">LOREM IPSUM</h3>
-                    <p class="list__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-                        arcu
-                        sem. Sed non sodales dui.
-                        Interdum et malesuada>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu
-                        sem.
-                        Sed non sodales dui.
-                        Interdum et malesuada
-                    </p>
-                </li>
-                <li>
-                    <h3 class="list__heading">LOREM IPSUM</h3>
-                    <p class="list__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-                        arcu
-                        sem. Sed non sodales dui.
-                        Interdum et malesuada>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu
-                        sem.
-                        Sed non sodales dui.
-                        Interdum et malesuada
-                    </p>
-                </li>
-            </ul>
+        <section class="section">
+            <div class="container">
+                <ul class="list">
+                    <li>
+                        <h3 class="list__heading">LOREM IPSUM</h3>
+                        <p class="list__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                            arcu
+                            sem. Sed non sodales dui.
+                            Interdum et malesuada>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu
+                            sem.
+                            Sed non sodales dui.
+                            Interdum et malesuada
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="list__heading">LOREM IPSUM</h3>
+                        <p class="list__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                            arcu
+                            sem. Sed non sodales dui.
+                            Interdum et malesuada>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu
+                            sem.
+                            Sed non sodales dui.
+                            Interdum et malesuada
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="list__heading">LOREM IPSUM</h3>
+                        <p class="list__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                            arcu
+                            sem. Sed non sodales dui.
+                            Interdum et malesuada>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu
+                            sem.
+                            Sed non sodales dui.
+                            Interdum et malesuada
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="list__heading">LOREM IPSUM</h3>
+                        <p class="list__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                            arcu
+                            sem. Sed non sodales dui.
+                            Interdum et malesuada>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu
+                            sem.
+                            Sed non sodales dui.
+                            Interdum et malesuada
+                        </p>
+                    </li>
+                </ul>
+            </div>
         </section>
         <section class="section container">
             <h2 class="section__heading">Czym się zajmujemy</h2>
@@ -105,8 +110,8 @@
                         <figure class="image__container"> <img class="list__image" src="./images/person1.jpg"
                                 alt="Product Designer photo" width="270" height="260">
                             <figcaption>
-                                <h3 class="third-header">John Doe</h3>
-                                <p class="third-header-desc">Product Designer</p>
+                                <h3 class="image__container__heading">John Doe</h3>
+                                <p class="image__container__desc">Product Designer</p>
                             </figcaption>
                         </figure>
                     </li>
@@ -115,8 +120,8 @@
                             <img class="list__image" src="./images/person2.jpg" alt="Frontend Developer photo"
                                 width="270" height="260">
                             <figcaption>
-                                <h3 class="third-header">John Doe</h3>
-                                <p class="third-header-desc">Frontend Developer</p>
+                                <h3 class="image__container__heading">John Doe</h3>
+                                <p class="image__container__desc">Frontend Developer</p>
                             </figcaption>
 
                         </figure>
@@ -126,8 +131,8 @@
                             <img class="list__image" src="./images/person3.jpg" alt="Marketing person photo" width="270"
                                 height="260">
                             <figcaption>
-                                <h3 class="third-header">John Doe</h3>
-                                <p class="third-header-desc">Marketing</p>
+                                <h3 class="image__container__heading">John Doe</h3>
+                                <p class="image__container__desc">Marketing</p>
                             </figcaption>
                         </figure>
                     </li>
@@ -136,8 +141,8 @@
                             <img class="list__image" src="./images/person4.jpg" alt="UI Designer photo" width="270"
                                 height="260">
                             <figcaption>
-                                <h3 class="third-header">John Doe</h3>
-                                <p class="third-header-desc">UI Designer</p>
+                                <h3 class="image__container__heading">John Doe</h3>
+                                <p class="image__container__desc">UI Designer</p>
                             </figcaption>
                         </figure>
                     </li>
@@ -147,12 +152,12 @@
     </main>
     <footer class="section__footer ">
         <div class="container">
-            <a class="link logo" href="./index.html">Web<span class="logo-white">Studio</span></a>
+            <a class="link logo" href="./index.html">Web<span class="logo--white">Studio</span></a>
             <address>
                 <p class="location">m. Warszawa, Aleje Jerozolimskie 21</p>
-                <a class="link location-link" href="mailto:info@example.com" rel="noopener noreferrer">info@example.com
+                <a class="link location__link" href="mailto:info@example.com" rel="noopener noreferrer">info@example.com
                 </a>
-                <a class="link location-link" href="tel:+48111111111" rel="noopener noreferrer">+48 111 111 111
+                <a class="link location__link" href="tel:+48111111111" rel="noopener noreferrer">+48 111 111 111
                 </a>
             </address>
         </div>
