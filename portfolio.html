@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -15,31 +14,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
         integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="./css/styles.css">
 
     <title>Portfolio</title>
 
 </head>
 
-<body>
-    <!-- header>a[rel="noopener noreferrer"]+(ul>li*3>a[rel="noopener noreferrer"])+(ul>li*2>a[rel="noopener noreferrer"])+main+footer>address -->
-    <header class="header container">
-        <a class="link logo" href="./index.html">Web<span class="logo--black">Studio</span></a>
-        <nav class="header__navigation">
-            <ul class="list header__list">
-                <li><a class="link active" href="./index.html" rel="noopener noreferrer">Agencja</a></li>
-                <li><a class="link" href="./portfolio.html" rel="noopener noreferrer">Portfolio</a></li>
-                <li><a class="link" href="" rel="noopener noreferrer">Kontakt</a></li>
-            </ul>
-        </nav>
-        <div class="header__contact">
-            <a class="link" href="mailto:info@devstudio.com" rel="noopener noreferrer">info@devstudio.com</a>
-            <a class="link" href="tel:+48111111111" rel="noopener noreferrer">+48 111 111 111</a>
+<body class="body">
+    <header class="header">
+        <div class="container" >
+            <a class="link logo" href="./index.html">Web<span class="logo--black">Studio</span></a>
+            <nav>
+                <ul class="list header__list">
+                    <li><a class="link active" href="./index.html" rel="noopener noreferrer">Agencja</a></li>
+                    <li><a class="link" href="./portfolio.html" rel="noopener noreferrer">Portfolio</a></li>
+                    <li><a class="link" href="" rel="noopener noreferrer">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="header__contact">
+                <a class="link" href="mailto:info@devstudio.com" rel="noopener noreferrer">info@devstudio.com</a>
+                <a class="link" href="tel:+48111111111" rel="noopener noreferrer">+48 111 111 111</a>
+            </div>
+            </div>
         </div>
-    </header>
+        </header>
     <main>
-        <hr class="line">
-        <!-- ul>li*5>button[type="button"]^^ul>li*9>figure>img[width height]+figcaption -->
         <div class="container">
             <ul class="list button--gap">
                 <li><button class="button--grey" type="button">Wszystkie</button></li>
@@ -48,8 +48,6 @@
                 <li><button class="button--grey" type="button">Dizajn</button></li>
                 <li><button class="button--grey" type="button">Marketing</button></li>
             </ul>
-        </div>
-        <div class="container">
             <ul class="list container__products">
                 <li>
                     <figure class="image__container2">

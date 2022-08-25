@@ -51,8 +51,14 @@
   border-radius: 4px;
   padding: 10px 0;
 }
+.section-top--line {
+  display: block;
+}
 .section {
-  margin-top: 94px;
+padding: 94px 0;
+}
+.section:nth-child(2){
+  padding-bottom: 0;
 }
 .section__heading {
   font-weight: 700;
@@ -73,32 +79,19 @@
   flex-wrap: wrap;
   letter-spacing: 0.03em;
 }
-
 .list__heading {
   line-height: 1.14;
-  /* letter-spacing: 0.03em; */
   text-transform: uppercase;
   color: var(--text-color);
   margin: 0 0 10px;
 }
 .list__description {
   line-height: 1.71;
-  /* letter-spacing: 0.03em; */
   width: 270px;
 }
-
 .list__image {
   display: block;
   margin: 0 auto;
-}
-.header__list {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--text-color);
-  display: flex;
-  justify-content: space-evenly;
-  column-gap: 50px;
 }
 .image-container {
   background-color: var(--background-color);
@@ -107,7 +100,6 @@
   border-radius: 0px 0px 4px 4px;
   margin: 0;
   text-align: center;
-  /* letter-spacing: 0.03em; */
   line-height: 1.19;
 }
 .image-container--heading {
@@ -132,7 +124,6 @@
 .link.active {
   color: var(--link-color);
 }
-
 .section--gray {
   background-color: #f5f4fa;
   width: 100%;
@@ -146,12 +137,15 @@
 .address {
   line-height: 1.71;
   letter-spacing: 0.03em;
+  display:flex;
+  flex-direction: column;
+  row-gap: 9px;
 }
 .address__location {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
-  margin: 20px 0 9px;
+  margin: 20px 0 0 0;
 }
 .address__link {
   color: rgba(255, 255, 255, 0.6);
@@ -184,12 +178,10 @@
   cursor: pointer;
   border-style: none;
 }
-.line {
-  border: 1px solid #ececec;
-  top: 80px;
-}
 .image__container2 {
-  width: 370px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 370px;
   background-color: var(--background-color);
   border: 1px solid #eeeeee;
   margin: 0;
@@ -206,7 +198,7 @@
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  margin: 0 24px 4px;
+  margin: 0 24px 20px;
 }
 .container__products {
   margin-bottom: 94px;
@@ -226,16 +218,26 @@
   color: #ffffff;
 }
 .header {
+  border-bottom: 1px solid #ececec;
+}
+.header > .container {
   display: flex;
+  flex-direction: row;
   align-items: center;
   align-content: center;
   padding: 24px 0 25px;
-}
-.header__navigation {
-  margin-right: 371px;
-  margin-left: 93px;
+  gap: 93px;
 }
 .header__contact {
   display: flex;
   column-gap: 50px;
+  margin-left: auto;
+}
+.header__list {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+  display: flex;
+  column-gap: 46px;
 }
