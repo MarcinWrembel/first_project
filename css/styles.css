@@ -5,7 +5,9 @@
   --button-background-std: #f5f4fa;
   --link-color: #2196f3;
   --button-color: #ffffff;
-  --section-background2: #2f303a;
+  --section-background2: #2f303a; 
+  --icon-blue: #2196F3;
+
 }
 .body {
   font-family: 'Roboto', 'Raleway', sans-serif;
@@ -55,9 +57,9 @@
   display: block;
 }
 .section {
-padding: 94px 0;
+  padding: 94px 0;
 }
-.section:nth-child(2){
+.section:nth-child(2) {
   padding-bottom: 0;
 }
 .section__heading {
@@ -93,25 +95,27 @@ padding: 94px 0;
   display: block;
   margin: 0 auto;
 }
-.image-container {
-  background-color: var(--background-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+.image__container {
   margin: 0;
   text-align: center;
   line-height: 1.19;
 }
-.image-container--heading {
+.image__container--heading {
   font-weight: 500;
   font-size: 16px;
   color: var(--text-color);
   margin: 30px 0 10px;
 }
-.image-container--desc {
+.image__container--desc {
   font-size: 16px;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
   margin: 0;
+}
+.list_item {
+  background-color: var(--background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .link {
   text-decoration: none;
@@ -137,7 +141,7 @@ padding: 94px 0;
 .address {
   line-height: 1.71;
   letter-spacing: 0.03em;
-  display:flex;
+  display: flex;
   flex-direction: column;
   row-gap: 9px;
 }
@@ -182,10 +186,11 @@ padding: 94px 0;
   /* display: flex;
   flex-direction: column;
   flex-basis: 370px; */
-  width:370px;
+  width: 370px;
   background-color: var(--background-color);
   border: 1px solid #eeeeee;
   margin: 0;
+  margin-block: 0;
 }
 .image__container2__heading {
   font-weight: 700;
@@ -242,3 +247,34 @@ padding: 94px 0;
   display: flex;
   column-gap: 46px;
 }
+
+.icon {
+  display: inline-block;
+}
+.list__icon {
+  display: flex;
+  width: 270 px;
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  padding: 25px auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+.icon__team {
+  display: flex;
+  padding-bottom: 30px;
+  justify-content: center;
+  column-gap: 10px;
+  fill:currentColor;
+ }
+
+.icon__team--color:hover {
+--color1: red;
+--color4:black;
+  cursor: pointer;
+  color: rebeccapurple;
+  background-color: yellow;
+  cursor: pointer;
+  }
