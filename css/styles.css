@@ -7,6 +7,9 @@
   --button-color: #ffffff;
   --section-background2: #2f303a;
   --icon-blue: #2196f3;
+  --icon-grey: #AFB1B8;
+  --top-background:rgba(47, 48, 58, 0.4);
+  --gradient-color: #2F303A66;
 }
 .body {
   font-family: 'Roboto', 'Raleway', sans-serif;
@@ -23,12 +26,13 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 200px 0 210px;
-  width: 100%;
-  background-color: rgba(47, 48, 58, 0.4);
-  background-image: gradient,  url(../images/background.jpg);
-
-  object-fit: cover;
+  padding: 200px 0 200px;
+  width: 1600px;
+  background-color: var(--top-background);
+  background-image: linear-gradient(var(--gradient-color) ,var(--gradient-color)), url(../images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .section-top__header {
   font-weight: 900;
@@ -172,10 +176,12 @@
   column-gap: 70px;
   align-items: baseline;
 }
-.footer__icons {
-gap: 10px;
-}
 /* -----------footer section------------ */
+.footer__icons {
+  gap: 10px;
+  width:44px;
+  height:44px;
+  }
 .button--grey {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -189,6 +195,7 @@ gap: 10px;
   border-radius: 4px;
   margin: 94px 0 50px;
   padding: 0;
+  
 }
 .button--gap {
   column-gap: 9px;
@@ -198,6 +205,8 @@ gap: 10px;
   background-color: var(--button-background);
   color: var(--button-color);
   outline-style: none;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
 }
 .section-top__button,
 .button--grey {
@@ -213,6 +222,10 @@ gap: 10px;
   border: 1px solid #eeeeee;
   margin: 0;
   margin-block: 0;
+}
+.image__container2:hover {
+border: 1px solid #EEEEEE;
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .image__container2__heading {
   font-weight: 700;
@@ -269,9 +282,14 @@ gap: 10px;
   display: flex;
   column-gap: 46px;
 }
-
+/* -------------- icons ------------- */
 .icon {
   display: inline-block;
+  fill:var(--icon-grey);
+  cursor: pointer;
+}
+.icon:hover{
+  fill: var(--icon-blue);
 }
 .list__icon {
   display: flex;
@@ -284,19 +302,35 @@ gap: 10px;
   align-items: center;
   border-radius: 4px;
 }
-.icon__team {
+.icon__social {
   display: flex;
   padding-bottom: 30px;
   justify-content: center;
   column-gap: 10px;
-  fill: currentColor;
-}
-
-.icon__team--color:hover {
-  --color1: red;
-  --color4: black;
-  cursor: pointer;
-  color: rebeccapurple;
+ }
+ .icon__social--color{
+  width:44px;
+  height:44px;
+ }
+.icon__social--color:hover {
+  color: transparent;
   background-color: yellow;
-  cursor: pointer;
+  border-radius: 50%;
 }
+.icon__activities {
+border: 1px solid var(--icon-grey);
+border-radius: 4px;
+width: 170px;
+height: 92px;
+fill:var(--icon-grey);
+
+}
+.icon__activities:hover,
+.icon__activities:focus {
+fill:var(--icon-blue);
+border: 1px solid var(--icon-blue);
+}
+.header__contact .icon{
+  margin-right: 10px;
+}
+/* -------------- icons ------------- */
