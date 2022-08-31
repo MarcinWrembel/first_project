@@ -23,22 +23,31 @@
 
 <body class="body">
     <header class="header">
-        <div class="container" >
+        <div class="container">
             <a class="link logo" href="./index.html">Web<span class="logo--black">Studio</span></a>
             <nav>
                 <ul class="list header__list">
-                    <li><a class="link" href="./index.html" rel="noopener noreferrer">Agencja</a></li>
-                    <li><a class="link active" href="./portfolio.html" rel="noopener noreferrer">Portfolio</a></li>
+                    <li><a class="link active" href="./index.html" rel="noopener noreferrer">Agencja</a></li>
+                    <li><a class="link" href="./portfolio.html" rel="noopener noreferrer">Portfolio</a></li>
                     <li><a class="link" href="" rel="noopener noreferrer">Kontakt</a></li>
                 </ul>
             </nav>
             <div class="header__contact">
-                <a class="link" href="mailto:info@devstudio.com" rel="noopener noreferrer">info@devstudio.com</a>
-                <a class="link" href="tel:+48111111111" rel="noopener noreferrer">+48 111 111 111</a>
-            </div>
+                <a class="link" href="mailto:info@devstudio.com" rel="noopener noreferrer">
+                    <svg class="icon header__icon" width="16" height="12">
+                        <use xlink:href="./images/icon.svg#envelope">
+                        </use>
+                    </svg>info@devstudio.com</a>
+                <a class="link" href="tel:+48111111111" rel="noopener noreferrer">
+                    <svg class="icon header__icon" width="10" height="16">
+                        <use xlink:href="./images/icon.svg#smartphone">
+                        </use>
+                    </svg>
+                    +48 111 111 111</a>
             </div>
         </div>
-        </header>
+        </div>
+    </header>
     <main>
         <div class="container">
             <ul class="list button--gap">
@@ -143,14 +152,54 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <a class="link logo" href="./index.html">Web<span class="logo--white">Studio</span></a>
-            <address class="address">
-                <p class="address__location">m. Warszawa, Aleje Jerozolimskie 21</p>
-                <a class="link address__link" href="mailto:info@example.com" rel="noopener noreferrer">info@example.com
-                </a>
-                <a class="link address__link" href="tel:+48111111111" rel="noopener noreferrer">+48 111 111 111
-                </a>
-            </address>
+            <div>
+                <a class="link logo" href="./index.html">Web<span class="logo--white">Studio</span></a>
+                <address class="address">
+                    <p class="address__location">m. Warszawa, Aleje Jerozolimskie 21</p>
+                    <a class="link address__link" href="mailto:info@example.com"
+                        rel="noopener noreferrer">info@example.com
+                    </a>
+                    <a class="link address__link" href="tel:+48111111111" rel="noopener noreferrer">+48 111 111 111
+                    </a>
+                </address>
+            </div>
+            <div>
+                <h5 class="footer__heading">dołącz do nas</h5>
+                <ul class="list icon__social">
+                    <li>
+                        <a class="link" href="">
+                            <svg class="icon icon__social--color">
+                                <use width="20" height="20" x="12" y="12" xlink:href="./images/icon.svg#instagram">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" href="">
+                            <svg class="icon icon__social--color">
+                                <use width="20" height="20" x="12" y="12" xlink:href="./images/icon.svg#twitter">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" href="">
+                            <svg class="icon icon__social--color">
+                                <use width="20" height="20" x="12" y="12" xlink:href="./images/icon.svg#facebook">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" href="">
+                            <svg class="icon icon__social--color">
+                                <use width="20" height="20" x="12" y="12" xlink:href="./images/icon.svg#linkedin">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>

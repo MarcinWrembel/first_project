@@ -7,9 +7,9 @@
   --button-color: #ffffff;
   --section-background2: #2f303a;
   --icon-blue: #2196f3;
-  --icon-grey: #AFB1B8;
-  --top-background:rgba(47, 48, 58, 0.4);
-  --gradient-color: #2F303A66;
+  --icon-grey: #afb1b8;
+  --top-background: rgba(47, 48, 58, 0.4);
+  --gradient-color: #2f303a66;
 }
 .body {
   font-family: 'Roboto', 'Raleway', sans-serif;
@@ -29,7 +29,8 @@
   padding: 200px 0 200px;
   width: 1600px;
   background-color: var(--top-background);
-  background-image: linear-gradient(var(--gradient-color) ,var(--gradient-color)), url(../images/background.jpg);
+  background-image: linear-gradient(var(--gradient-color), var(--gradient-color)),
+    url(../images/background.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -125,6 +126,7 @@
 .link {
   text-decoration: none;
   color: #757575;
+
 }
 .link:focus,
 .link:hover {
@@ -150,8 +152,8 @@
   display: flex;
   flex-direction: column;
   row-gap: 9px;
-  width:246px;
-  margin:0;
+  width: 246px;
+  margin: 0;
 }
 .address__location {
   line-height: 1.71;
@@ -168,7 +170,7 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color:#ffffff;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 .footer > .container {
@@ -179,9 +181,9 @@
 /* -----------footer section------------ */
 .footer__icons {
   gap: 10px;
-  width:44px;
-  height:44px;
-  }
+  width: 44px;
+  height: 44px;
+}
 .button--grey {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -195,7 +197,6 @@
   border-radius: 4px;
   margin: 94px 0 50px;
   padding: 0;
-  
 }
 .button--gap {
   column-gap: 9px;
@@ -205,8 +206,8 @@
   background-color: var(--button-background);
   color: var(--button-color);
   outline-style: none;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .section-top__button,
 .button--grey {
@@ -224,8 +225,9 @@
   margin-block: 0;
 }
 .image__container2:hover {
-border: 1px solid #EEEEEE;
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .image__container2__heading {
   font-weight: 700;
@@ -273,6 +275,11 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
   display: flex;
   column-gap: 50px;
   margin-left: auto;
+  align-items: center;
+  align-content: center;
+}
+.header__contact .link {
+  display: flex;
 }
 .header__list {
   font-weight: 500;
@@ -285,10 +292,10 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
 /* -------------- icons ------------- */
 .icon {
   display: inline-block;
-  fill:var(--icon-grey);
-  cursor: pointer;
+  fill: var(--icon-grey);
 }
-.icon:hover{
+
+.link:hover .header__icon {
   fill: var(--icon-blue);
 }
 .list__icon {
@@ -307,30 +314,41 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
   padding-bottom: 30px;
   justify-content: center;
   column-gap: 10px;
- }
- .icon__social--color{
-  width:44px;
-  height:44px;
- }
+
+}
+.icon__social--color {
+  width: 44px;
+  height: 44px;
+  
+}
 .icon__social--color:hover {
-  color: transparent;
-  background-color: yellow;
+  fill: var(--background-color);
+  background-color: var(--icon-blue);
   border-radius: 50%;
 }
 .icon__activities {
-border: 1px solid var(--icon-grey);
-border-radius: 4px;
-width: 170px;
-height: 92px;
-fill:var(--icon-grey);
-
+  border: 1px solid var(--icon-grey);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  fill: var(--icon-grey);
 }
 .icon__activities:hover,
 .icon__activities:focus {
-fill:var(--icon-blue);
-border: 1px solid var(--icon-blue);
+  fill: var(--icon-blue);
+  border: 1px solid var(--icon-blue);
 }
-.header__contact .icon{
+.header__contact .icon {
   margin-right: 10px;
 }
+.footer .icon {
+background-color: rgba(255, 255, 255, 0.1);
+border-radius: 50%;
+fill:var(--background-color)
+}
+.footer .icon:hover {
+  background-color: var(--icon-blue);
+  border-radius: 50%;
+  fill:var(--background-color)
+  }
 /* -------------- icons ------------- */
