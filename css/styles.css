@@ -28,9 +28,9 @@
   align-items: center;
   padding: 200px 0 200px;
   width: 1600px;
-  background-color: var(--top-background);
-  background-image: linear-gradient(var(--gradient-color), var(--gradient-color)),
-    url(../images/background.jpg);
+  background-color: var(--gradient-color);
+  background-image:  url(../images/background.jpg);
+  background-blend-mode: darken;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
