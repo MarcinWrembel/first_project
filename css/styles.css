@@ -196,14 +196,13 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
-  width: 121px;
-  background-color: var(--button-background-std);
+   background-color: var(--button-background-std);
   border-radius: 4px;
   margin: 94px 0 50px;
-  padding: 0;
+  padding: 6px 22px;
 }
 .button--gap {
-  column-gap: 9px;
+  column-gap: 8px;
 }
 .button--grey:focus,
 .button--grey:hover {
