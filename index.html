@@ -26,9 +26,11 @@
             <a class="link logo" href="./index.html">Web<span class="logo--black">Studio</span></a>
             <nav>
                 <ul class="list header__list">
-                    <li><a class="link active" href="./index.html" rel="noopener noreferrer">Agencja</a></li>
-                    <li><a class="link" href="./portfolio.html" rel="noopener noreferrer">Portfolio</a></li>
-                    <li><a class="link" href="" rel="noopener noreferrer">Kontakt</a></li>
+                    <li class="list__item"><a class="link active" href="./index.html"
+                            rel="noopener noreferrer">Agencja</a></li>
+                    <li class="list__item"><a class="link" href="./portfolio.html"
+                            rel="noopener noreferrer">Portfolio</a></li>
+                    <li class="list__item"><a class="link" href="" rel="noopener noreferrer">Kontakt</a></li>
                 </ul>
             </nav>
             <div class="header__contact">
@@ -48,16 +50,14 @@
         </div>
     </header>
     <main>
-
         <section class="section-top">
             <div class="container">
                 <h1 class="section-top__header">EFEKTYWNE ROZWIĄZANIA <span class="section-top--line">DLA WASZEGO
                         BIZNESU</span>
                 </h1>
-                <button class="section-top__button" type="button">Zamów usługę</button>
+                <button class="section-top__button" type="button" data-modal-open>Zamów usługę</button>
             </div>
         </section>
-
         <section class="section">
             <div class="container">
                 <ul class="list">
@@ -450,6 +450,17 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden">
+        <div class="backdrop__modal" data-modal>
+            <button class="button-close" type="button" data-modal-close>
+                <svg>
+                    <use width="11" height="11" xlink:href="../images/icon.svg#close">
+                    </use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
