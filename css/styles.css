@@ -537,6 +537,7 @@
   padding-left: 42px;
   height: 40px;
   outline: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form__text {
   resize: none;
@@ -599,11 +600,11 @@ dla działania w input powinno być placeholder=" "
   left: 0;
 }
 .checkbox {
-  opacity:0;
-  height:0;
-  width:0;
+  opacity: 0;
+  height: 0;
+  width: 0;
 }
-.checkbox:checked ~ .checkmark-icon{
+.checkbox:checked ~ .checkmark-icon {
   fill: var(--background-color);
   background-color: var(--icon-blue);
   border: 1px solid var(--icon-blue);
