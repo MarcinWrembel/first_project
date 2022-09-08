@@ -241,6 +241,7 @@
   border-radius: 4px;
   color: rgba(255, 255, 255, 0.6);
   margin-right: 10px;
+  outline:none;
 }
 .footer__button {
   padding: 0 0 0 42px;
@@ -574,6 +575,7 @@ dla działania w input powinno być placeholder=" "
 .form__input:focus {
   border: 1px solid var(--icon-blue);
   border-radius: 4px;
+  outline:none;
 }
 .form__input:focus ~ .form__icon {
   fill: var(--icon-blue);
