@@ -1,2 +1,10 @@
-@import url(/sass/utils/variables.scss);
-@import url(/sass/components/buttons.scss);
+@import '/sass/utils/variables';
+@import '/sass/components/buttons';
+
+  .body {
+    font-family: $site-fonts;
+    background-color: $primary-background-color;
+    color: $primary-text-color;
+    font-size: 14px;
+  }
+ 

@@ -50,7 +50,7 @@
   margin: 0 0 40px;
   display: block;
 }
-.button{
+.button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -133,7 +133,7 @@
   text-align: center;
   line-height: 1.19;
 }
-.image-container__image{
+.image-container__image {
   display: block;
 }
 .img-container__heading {
@@ -250,8 +250,8 @@
   text-align: left;
 }
 .icon-send {
-  width:60px;
-  height:40px;
+  width: 60px;
+  height: 40px;
   margin-left: 24px;
   position: absolute;
 }

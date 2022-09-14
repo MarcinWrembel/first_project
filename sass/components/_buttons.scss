@@ -1,63 +1,72 @@
 @import '/sass/utils/variables';
 
+%button--commmon {
+  cursor: pointer;
+  border-style: none;
+  font-size: 16px;
+}
+
+%button--left {
+  padding: 0 0 0 42px;
+  text-align: left;
+}
+
 .button {
   font-weight: 700;
-  font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   width: 200px;
   height: 50px;
-  background-color: var(--button-background);
-  color: var(--button-color);
+  background-color: $button-icon-color;
+  color: $button-text-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 10px 0;
   transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid var(--button-background);
+  border: 1px solid $button-icon-color;
+  @extend %button--common;
 
   &--left {
     padding: 0 0 0 42px;
     text-align: left;
   }
 }
-.button--blue {
-  background-color: var(--button-background);
+.button--color {
+  background-color: $button-icon-color;
   transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  @extend .button
+
 }
-.button--blue:hover {
-  background-color: var(--section-background2);
+.button--color:hover {
+  background-color: $section-bakcground-color;
 }
 
-.button-color2 {
+.button-filter {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
-  background-color: var(--button-background-std);
+  background-color: $button-background;
   border-radius: 4px;
   margin: 0 0 50px;
   padding: 6px 22px;
   transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  @extend %button-common;
+  @extend %button--common;
 
   &:focus,
   &:hover {
-    background-color: var(--button-background);
-    color: var(--button-color);
+    background-color: $button-icon-color;
+    color: $primary-background-color;
     outline-style: none;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+      0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 }
-.button-commmon {
-  cursor: pointer;
-  border-style: none;
-}
+
 .button-close {
   position: absolute;
   right: 8px;
@@ -65,27 +74,27 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: var(--background-color);
+  background-color: $primary-background-color;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 9px;
-  cursor: pointer;
   transition: background-color 1s ease, border 1s ease;
-
+  @extend %button--common;
+  
   &:hover {
-    background-color: var(--section-background2);
-    border: 1 px solid var(--icon-blue);
-    fill: var(--button-color);
+    background-color: $section-bakcground-color;
+    border: 1 px solid $button-icon-color;
+    fill: $primary-background-color;
   }
 
   & > .icon {
     width: 11px;
     height: 11px;
-    fill: var(--text-color);
+    fill: $bolded-text-color;
     transition: fill 1s ease;
   }
 
   &:hover > .icon {
-    fill: var(--button-color);
+    fill: $primary-background-color;
   }
 }

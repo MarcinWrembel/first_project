@@ -1,0 +1,29 @@
+.header {
+    border-bottom: 1px solid #ececec;
+  }
+  .header__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    padding: 24px 0 25px;
+    gap: 93px;
+  }
+  .header__contact {
+    display: flex;
+    column-gap: 50px;
+    margin-left: auto;
+    align-items: center;
+    align-content: center;
+  }
+  .header__contact .link {
+    display: flex;
+  }
+  .header__nav {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    display: flex;
+    column-gap: 46px;
+  }
