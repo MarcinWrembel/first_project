@@ -1,10 +1,21 @@
-@import '/sass/utils/variables';
-@import '/sass/components/buttons';
+@import './utils/variables';
+@import './utils/mixin';
+@import './components/list';
+@import './components/link';
+@import './components/logo';
+@import './components/inner-sections';
+@import './components/header';
+@import './components/footer';
+@import './components/images';
+@import './components/icons';
+@import './components/buttons';
+@import './components/section-top';
+@import './components/modal';
+@import './components/form';
 
-  .body {
-    font-family: $site-fonts;
-    background-color: $primary-background-color;
-    color: $primary-text-color;
-    font-size: 14px;
-  }
- 
+.body {
+  font-family: $site-fonts;
+  background-color: $primary-background-color;
+  color: $primary-text-color;
+  font-size: 14px;
+}

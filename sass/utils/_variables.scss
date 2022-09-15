@@ -1,27 +1,39 @@
-$primary-text-color:#757575;
-$bolded-text-color:#212121;
-$primary-background-color:#ffffff;
-$section-background-color:#2f303a;
-$link-text-color:#2196f3;
-$button-icon-color:#2196f3;
-$button-text-color:#ffffff;
+$primary-text-color: #757575;
+$bolded-text-color: #212121;
+$header-border-color:#ececec;
+$primary-background-color: #ffffff;
+$section-background-color: #2f303a;
+$link-text-color: #2196f3;
+$button-icon-color: #2196f3;
+$button-text-color: #ffffff;
 $button-background: #f5f4fa;
-
-
+$logo-primary-color: #ffffff;
+$logo-secondary-color: #000000;
+$icon-fill-primary:#afb1b8;
+$input-border-color: rgba(33, 33, 33, .2);
+$form-std-color:rgba(117, 117, 117, .5);
+$modal-background-color:rgba(0, 0, 0, .2);
+$modal-box-shadow-primary:rgba(0, 0, 0, .12);
+$modal-box-shadow-secondary:rgba(0, 0, 0, .14);
+$section-top-background:#2f303a66;
+$footer-link-color:rgba(255, 255, 255, .6);
+$footer-input-color:rgba(255, 255, 255, .3);
+$footer-shadow-color:rgba(0, 0, 0, .15);
+$footer-icon-background:rgba(255, 255, 255, 0.1);
 
 
 $site-fonts: 'Roboto', 'Raleway', sans-serif;
 
-:root {
-    --text-color: #212121;
-    --background-color: #ffffff;
-    --button-background: #2196f3;
-    --button-background-std: #f5f4fa;
-    --link-color: #2196f3;
-    --button-color: #ffffff;
-    --section-background2: #2f303a;
-    --icon-blue: #2196f3;
-    --icon-grey: #afb1b8;
-    --top-background: rgba(47, 48, 58, 0.4);
-    --gradient-color: #2f303a66;
-  }
+// :root {
+//     --text-color: #212121;
+//     --background-color: #ffffff;
+//     --button-background: #2196f3;
+//     --button-background-std: #f5f4fa;
+//     --link-color: #2196f3;
+//     --button-color: #ffffff;
+//     --section-background2: #2f303a;
+//     --icon-blue: #2196f3;
+//     --icon-grey: #afb1b8;
+//     --top-background: rgba(47, 48, 58, 0.4);
+//     --gradient-color: #2f303a66;
+//   }
