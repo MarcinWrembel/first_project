@@ -1,7 +1,8 @@
 .icon {
   display: inline-block;
   fill: $icon-fill-primary;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
+  @include vis-effect();
   
   &-send {
     width: 60px;
@@ -16,8 +17,8 @@
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill, background-color;
+    @include vis-effect();
 
     &:hover {
       fill: $primary-background-color;
@@ -31,7 +32,8 @@
     width: 170px;
     height: 92px;
     fill: $icon-fill-primary;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill;
+    @include vis-effect();
 
     &:hover,
     &:focus {

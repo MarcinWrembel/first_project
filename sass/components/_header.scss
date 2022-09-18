@@ -27,9 +27,7 @@
   
   &__nav {
     @include set-flex(row,flex-start,stretch);
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    @include font-atr(500,1.14,0.02em);
     color: $bolded-text-color;
     column-gap: 46px;
   }

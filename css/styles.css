@@ -21,6 +21,9 @@
   width: 1200px;
   margin: 0 auto;
 }
+.section__container--gap {
+margin-bottom: 94px;
+}
 .section-top {
   width: 100%;
   background-color: var(--section-background2);

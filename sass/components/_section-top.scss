@@ -21,10 +21,8 @@
   }
 
   &__header {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
+    @include font-atr(900,1.36,0.06em);
+    font-size: get-size('top-section');
     text-align: center;
     text-transform: uppercase;
     color: $button-text-color;

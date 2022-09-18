@@ -1,26 +1,22 @@
 .form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include set-flex(column, flex-start);
+  //flex-direction,justify-content,align-items
   padding-left: 40px;
   padding-right: 40px;
   row-gap: 10px;
   width: 100%;
 
   &__header {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
+    @include font-atr(700, 1.15, 0.03em);
+    font-size: get-size('form-header');
     text-align: center;
-    letter-spacing: 0.03em;
     color: $bolded-text-color;
     margin: 40px 0 12px 0;
   }
 
   &__lbl {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
+    @include font-atr(400, 1.17, 0.01em);
+    font-size: get-size('form-lbl');
     width: 100%;
     position: relative;
   }
@@ -37,21 +33,19 @@
   }
 
   &__text {
+    @include font-atr(400, 1.17, 0.01em);
     resize: none;
     height: 120px;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
+    font-size: get-size('form-lbl');
     padding: 12px 16px;
     color: $form-std-color;
   }
 
   &__terms-and-cond {
-    margin: 10px 0 20px 0;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include font-atr(400, 1.71, 0.03em);
     @include set-flex(row);
+    margin: 10px 0 20px 0;
+    font-size: get-size('form-terms');
     width: 100%;
     position: relative;
   }
@@ -59,8 +53,8 @@
   &__link {
     color: $link-text-color;
     font-weight: 400;
-    transition: font-weight 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: font-weight, color;
+    @include vis-effect();
   }
 
   &__link:hover {
