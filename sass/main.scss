@@ -1,6 +1,7 @@
 @import './utils/variables';
 @import './utils/function';
 @import './utils/mixin';
+@import './components/general';
 @import './components/list';
 @import './components/link';
 @import './components/logo';
@@ -14,9 +15,3 @@
 @import './components/modal';
 @import './components/form';
 
-.body {
-  font-family: $site-fonts;
-  background-color: $primary-background-color;
-  color: $primary-text-color;
-  font-size: get-size('body-size');
-}
