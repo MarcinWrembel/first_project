@@ -20,39 +20,37 @@
 
 //--------------------------
 .img-container-secondary {
-  /* display: flex;
-  flex-direction: column;
-  flex-basis: 370px; */
+  // display: flex;
+  // flex-direction: column;
+  // flex-basis: 370px;
   display: block;
   background-color: $primary-background-color;
-  border: 1px solid $product-border;
   margin: 0;
   margin-block: 0;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
     cursor: pointer;
-    border: 1px solid $product-border;
-    box-shadow: 0px 1px 1px $modal-box-shadow-primary, 0px 4px 4px $image-shadow-secondary,
-      1px 4px 6px $image-shadow-thrid;
+    box-shadow: 0px 1px 1px $modal-box-shadow-primary, 0px 4px 4px $image-shadow-secondary, 1px 4px 6px $image-shadow-thrid;
   }
 
   &__heading {
     @include font-atr(700, 2, 0.06em);
     font-size: 18px;
     color: $bolded-text-color;
-    margin: 20px 24px 4px;
+    margin: 0;
+    padding-bottom: 4px;
   }
 
   &__desc {
     @include font-atr(400, 1.88, 0.03em);
     font-size: get-size('img-heading');
-    margin: 0 24px 20px;
+    margin: 0;
   }
 
   &__overlay {
     position: absolute;
-    width: 372px;
+    width: 370px;
     height: 294px;
     overflow: hidden;
   }
@@ -79,5 +77,11 @@
 
   &:hover &__layer {
     transform: translateY(0);
+  }
+
+  &__caption {
+    border: 1px solid $product-border;
+    border-top: 0;
+    padding: 20px 24px;
   }
 }

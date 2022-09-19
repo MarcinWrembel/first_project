@@ -10,7 +10,7 @@
   }
 
   &__container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 
     &--gap {
@@ -37,7 +37,6 @@
     color: $button-text-color;
     background: $figure-background;
     padding: 27px 0;
-
     width: 100%;
     bottom: 0;
   }
