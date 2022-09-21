@@ -25,36 +25,42 @@
     <header class="header">
         <div class="header__container">
             <a class="link logo" href="./index.html">Web<span class="logo logo--black">Studio</span></a>
-            <nav>
-                <ul class="list header__nav">
-                    <li class="list__position"><a class="link link--active" href="./index.html"
-                            rel="noopener noreferrer">Agencja</a></li>
-                    <li class="list__position"><a class="link" href="./portfolio.html"
-                            rel="noopener noreferrer">Portfolio</a></li>
-                    <li class="list__position"><a class="link" href="" rel="noopener noreferrer">Kontakt</a></li>
-                </ul>
-            </nav>
-            <div class="header__contact">
-                <a class="link header__link" href="mailto:info@devstudio.com" rel="noopener noreferrer">
-                    <svg class="icon header__icon" width="16" height="12">
-                        <use xlink:href="./images/icon.svg#envelope">
-                        </use>
-                    </svg>info@devstudio.com</a>
-                <a class="link header__link" href="tel:+48111111111" rel="noopener noreferrer">
-                    <svg class="icon header__icon" width="10" height="16">
-                        <use xlink:href="./images/icon.svg#smartphone">
-                        </use>
-                    </svg>
-                    +48 111 111 111</a>
+            <div class="menu">
+                <nav>
+                    <ul class="list header__list">
+                        <li class="list__position"><a class="link link--active" href="./index.html"
+                                rel="noopener noreferrer">Agencja</a></li>
+                        <li class="list__position"><a class="link" href="./portfolio.html"
+                                rel="noopener noreferrer">Portfolio</a></li>
+                        <li class="list__position"><a class="link" href="" rel="noopener noreferrer">Kontakt</a></li>
+                    </ul>
+                </nav>
+                <div class="header__contact">
+                    <a class="link header__link" href="mailto:info@devstudio.com" rel="noopener noreferrer">
+                        <svg class="icon header__icon" width="16" height="12">
+                            <use xlink:href="./images/icon.svg#envelope">
+                            </use>
+                        </svg>info@devstudio.com</a>
+                    <a class="link header__link" href="tel:+48111111111" rel="noopener noreferrer">
+                        <svg class="icon header__icon" width="10" height="16">
+                            <use xlink:href="./images/icon.svg#smartphone">
+                            </use>
+                        </svg>
+                        +48 111 111 111</a>
+                </div>
             </div>
         </div>
-        </div>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg width="24" height="16">
+                <use xlink:href="./images/icon.svg#menu_24px"></use>
+            </svg>
+        </button>
     </header>
     <main>
         <section class="section-top">
             <div class="section-top__layout">
                 <h1 class="section-top__header">EFEKTYWNE ROZWIĄZANIA
-                    <span class="section-top__header">
+                    <span class="section-top__header section-top__header--margin">
                         DLA WASZEGO BIZNESU
                     </span>
                 </h1>
@@ -135,13 +141,13 @@
                 </ul>
             </div>
         </section>
-        <section class="section">
+        <section class="section section--mobile-hidden">
             <div class="section__container">
                 <h2 class="section__heading">Czym się zajmujemy</h2>
                 <ul class="list">
                     <li>
                         <figure class="section__figure">
-                            <img src="./images/image1.jpg" alt="code typing" width="370" height="294">
+                            <img src="./images/image1@2x.jpg" alt="code typing" width="370" height="294">
                             <figcaption class="section__figure-desc">
                                 Aplikacje komputerowe
                             </figcaption>
@@ -150,7 +156,7 @@
                     </li>
                     <li>
                         <figure class="section__figure">
-                            <img src="./images/image2.jpg" alt="mobile aplication settings" width="370" height="294">
+                            <img src="./images/image2@2x.jpg" alt="mobile aplication settings" width="370" height="294">
                             <figcaption class="section__figure-desc">
                                 Aplikacje mobilne
                             </figcaption>
@@ -158,7 +164,7 @@
                     </li>
                     <li>
                         <figure class="section__figure">
-                            <img src="./images/image3.jpg" alt="color settings" width="370" height="294">
+                            <img src="./images/image3@2x.jpg" alt="color settings" width="370" height="294">
                             <figcaption class="section__figure-desc">
                                 Rozwiązania graficzne
                             </figcaption>
@@ -173,14 +179,14 @@
                 <ul class="list">
                     <li class="list__item">
                         <figure class="img-container">
-                            <img class="image-container__image" src="./images/person1.jpg" alt="Product Designer photo"
-                                width="270" height="260">
+                            <img class="image-container__image" src="./images/person1@2x.jpg"
+                                alt="Product Designer photo">
                             <figcaption>
                                 <h3 class="img-container__heading">John Doe</h3>
                                 <p class="img-container__desc">Product Designer</p>
                             </figcaption>
                         </figure>
-                        <ul class="list list--gap">
+                        <ul class="list list--flex-row list--gap">
                             <li>
                                 <a class="link" href="">
                                     <svg class="icon icon--social">
@@ -221,14 +227,14 @@
                     </li>
                     <li class="list__item">
                         <figure class="img-container">
-                            <img class="image-container__image" src="./images/person2.jpg"
-                                alt="Frontend Developer photo" width="270" height="260">
+                            <img class="image-container__image" src="./images/person2@2x.jpg"
+                                alt="Frontend Developer photo">
                             <figcaption>
                                 <h3 class="img-container__heading">John Doe</h3>
                                 <p class="img-container__desc">Frontend Developer</p>
                             </figcaption>
                         </figure>
-                        <ul class="list list--gap">
+                        <ul class="list list--flex-row list--gap">
                             <li>
                                 <a class="link" href="">
                                     <svg class="icon icon--social">
@@ -269,14 +275,14 @@
                     </li>
                     <li class="list__item">
                         <figure class="img-container">
-                            <img class="image-container__image" src="./images/person3.jpg" alt="Marketing person photo"
-                                width="270" height="260">
+                            <img class="image-container__image" src="./images/person3@2x.jpg"
+                                alt="Marketing person photo">
                             <figcaption>
                                 <h3 class="img-container__heading">John Doe</h3>
                                 <p class="img-container__desc">Marketing</p>
                             </figcaption>
                         </figure>
-                        <ul class="list list--gap">
+                        <ul class="list list--flex-row list--gap">
                             <li>
                                 <a class="link" href="">
                                     <svg class="icon icon--social">
@@ -317,14 +323,13 @@
                     </li>
                     <li class="list__item">
                         <figure class="img-container">
-                            <img class="image-container__image" src="./images/person4.jpg" alt="UI Designer photo"
-                                width="270" height="260">
+                            <img class="image-container__image" src="./images/person4@2x.jpg" alt="UI Designer photo">
                             <figcaption>
                                 <h3 class="img-container__heading">John Doe</h3>
                                 <p class="img-container__desc">UI Designer</p>
                             </figcaption>
                         </figure>
-                        <ul class="list list--gap">
+                        <ul class="list list--flex-row list--gap">
                             <li>
                                 <a class="link" href="">
                                     <svg class="icon icon--social">
@@ -369,11 +374,11 @@
         <section class="section">
             <div class="section__container">
                 <h2 class="section__heading">Nasi klienci</h2>
-                <ul class="list">
-                    <li>
+                <ul class="list list--flex-row">
+                    <li >
                         <a class="link" href="">
                             <svg class="icon icon--activities">
-                                <use width="106" height="60" x="32" y="17.71" xlink:href="./images/icon.svg#logo1">
+                                <use width="106" height="60"  xlink:href="./images/icon.svg#logo1">
                                 </use>
                             </svg>
                         </a>
@@ -381,7 +386,7 @@
                     <li>
                         <a class="link" href="">
                             <svg class="icon icon--activities">
-                                <use width="106" height="60" x="32" y="16" xlink:href="./images/icon.svg#logo2">
+                                <use width="106" height="60" xlink:href="./images/icon.svg#logo2">
                                 </use>
                             </svg>
                         </a>
@@ -389,7 +394,7 @@
                     <li>
                         <a class="link" href="">
                             <svg class="icon icon--activities">
-                                <use width="106" height="60" x="32" y="16" xlink:href="./images/icon.svg#logo3">
+                                <use width="106" height="60" xlink:href="./images/icon.svg#logo3">
                                 </use>
                             </svg>
                         </a>
@@ -397,7 +402,7 @@
                     <li>
                         <a class="link" href="">
                             <svg class="icon icon--activities">
-                                <use width="106" height="60" x="32" y="16" xlink:href="./images/icon.svg#logo4">
+                                <use width="106" height="60"  xlink:href="./images/icon.svg#logo4">
                                 </use>
                             </svg>
                         </a>
@@ -405,7 +410,7 @@
                     <li>
                         <a class="link" href="">
                             <svg class="icon icon--activities">
-                                <use width="106" height="60" x="32" y="16" xlink:href="./images/icon.svg#logo5">
+                                <use width="106" height="60"xlink:href="./images/icon.svg#logo5">
                                 </use>
                             </svg>
                         </a>
@@ -413,7 +418,7 @@
                     <li>
                         <a class="link" href="">
                             <svg class="icon icon--activities">
-                                <use width="106" height="60" x="32" y="16" xlink:href="./images/icon.svg#logo6">
+                                <use width="106" height="60" xlink:href="./images/icon.svg#logo6">
                                 </use>
                             </svg>
                         </a>
@@ -437,7 +442,7 @@
             </div>
             <div class="footer__socials">
                 <h5 class="footer__heading">dołącz do nas</h5>
-                <ul class="list list--gap">
+                <ul class="list list--flex-row list--gap">
                     <li>
                         <a class="link" href="">
                             <svg class="icon icon--social">
@@ -525,7 +530,7 @@
                         <use width="11" height="8" xlink:href="./images/icon.svg#ok">
                         </use>
                     </svg>
-                    <span>
+                    <span class="form__declaration">
                         Oświadczam iż akceptuję <a href="" class="form__link"> Regulamin</a>
                         i
                         <a href="" class="form__link">
@@ -536,6 +541,36 @@
             </form>
         </div>
     </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle menu-toggle--close js-close-menu">
+            <svg width="18.7" height="18.7">
+                <use xlink:href="./images/icon.svg#close"></use>
+            </svg>
+        </button>
+        <ul class="mobile-menu">
+            <li class="mobile-menu__item"><a href="./index.html" rel="noopener noreferrer"
+                    class="mobile-menu__link link mobile-menu__link--active ">Agencja</a></li>
+            <li class="mobile-menu__item"><a href="./portfolio.html" rel="noopener noreferrer"
+                    class="mobile-menu__link link">Portfolio</a></li>
+            <li class="mobile-menu__item"><a href="" class="mobile-menu__link link">Kontakt</a></li>
+        </ul>
+        <div class="mobile-address">
+            <a class="mobile-address__phone link" href="tel:+48111111111" rel="noopener noreferrer">+48 111 111 111</a>
+            <a class="mobile-address__mail link" href="mailto:info@devstudio.com"
+                rel="noopener noreferrer">info@devstudio.com</a>
+
+        </div>
+        <ul class="mobile-socials">
+            <li class="mobile-socials__item"><a class="mobile-socials__link link" href="">Instagram</a></li>
+            <li class="mobile-socials__item"><a class="mobile-socials__link link" href="">Twitter</a></li>
+            <li class="mobile-socials__item"><a class="mobile-socials__link link" href="">Facebook</a></li>
+            <li class="mobile-socials__item"><a class="mobile-socials__link link" href="">LinkedIn</a></li>
+        </ul>
+    </div>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 

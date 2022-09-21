@@ -21,6 +21,7 @@
   border: 1px solid $button-icon-color;
 
   &--color-main {
+    margin: 0 auto;
     background-color: $button-icon-color;
     transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -44,7 +45,8 @@
   color: $bolded-text-color;
   background-color: $button-background;
   border-radius: 4px;
-  margin: 0 0 50px;
+  // margin: 0 0 50px;
+  margin: 0;
   padding: 6px 22px;
   transition-property: color, background-color, box-shadow;
   @include vis-effect();

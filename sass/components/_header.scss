@@ -1,12 +1,12 @@
 .header {
   border-bottom: 1px solid $header-border-color;
+  position: relative;
 
   &__container {
     @include set-flex(row,flex-start);
-    align-content: center;
-    padding: 24px 0 25px;
+    padding: 16px 15px;
     gap: 93px;
-    width: 1200px;
+    min-width: 320px;
     margin: 0 auto;
   }
 
@@ -25,10 +25,15 @@
     @include set-flex(row,flex-start,stretch);
   }
   
-  &__nav {
+  &__list {
     @include set-flex(row,flex-start,stretch);
     @include font-atr(500,1.14,0.02em);
     color: $bolded-text-color;
     column-gap: 46px;
   }
 }
+// @media (max-width: 480px) {
+//   .header__container {
+//     padding-left: 15px;
+//   }
+// }
