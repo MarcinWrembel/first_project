@@ -39,6 +39,7 @@
   &__description {
     font-size: get-size('mobile-small-text');
     @include font-atr(400,1.71,0.03em);
+    padding: 0 15px;
     // min-width: 320px;
     // max-width: 450px;
     margin: 0;
