@@ -1,6 +1,7 @@
 .footer {
   background-color: $section-background-color;
-  width: 100%;
+  // width: 100%;
+  max-width: 480px;
   padding: 60px 0;
 
   &__address {

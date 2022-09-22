@@ -18,7 +18,7 @@
     max-width: 480px;
     min-width: 320px;
     // margin: 0 auto;
-    padding: 0 15px 0;
+    // padding: 0 15px 0;
 
     &--gap {
       margin-bottom: 94px;
@@ -38,7 +38,7 @@
   &__figure-desc {
     @include font-atr(700, 1.14, 0.03em);
     position: absolute;
-    font-size: get-size ('product-desc');
+    font-size: get-size('product-desc');
     text-align: center;
     text-transform: uppercase;
     color: $button-text-color;
@@ -51,6 +51,7 @@
   &--gray {
     background-color: $button-background;
     width: 100%;
+    // min-width: 320px;
     // padding: 94px 0;
     padding: 60px 0;
   }

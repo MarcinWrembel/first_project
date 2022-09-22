@@ -1,5 +1,5 @@
 .list {
-  @include set-flex(column);
+  @include set-flex(row);
   // max-width: 1170px;
   gap: 30px;
   flex-wrap: wrap;
@@ -10,12 +10,12 @@
 
   &__icon {
     @include set-flex(row);
-    min-width: 320px;
-    max-width:450px;
+    min-width:320px;
+    max-width: 450px;
     height: 120px;
     background-color: $button-background;
-    margin-bottom: 30px;
-    padding: 25px auto; 
+    margin: 0 auto 30px;
+    padding: 25px 0; 
     border-radius: 4px;
   }
   &--gap {
@@ -23,10 +23,10 @@
     // padding-bottom: 30px;
   }
 
-  &--flex-row {
-    @include set-flex(row);
-    // padding-bottom: 24px;
-  }
+  // &--flex-row {
+  //   @include set-flex(row);
+  //   // padding-bottom: 24px;
+  // }
 
   &__heading {
     font-size: get-size('mobile-small-heading');
@@ -55,6 +55,9 @@
     position: relative;
   }
   &__products {
-    flex-basis: calc((100% - 30px * 2)/ 3);
+    // flex-basis: 93.75%;
+    // flex-wrap: wrap;
+    min-width: 320px;
+    max-width: 450px;
   }
 }
