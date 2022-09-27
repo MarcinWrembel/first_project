@@ -41,6 +41,7 @@
   .section-top__layout {
     width: 1600px;
     margin: 0 auto;
+    padding: 200px 0;
   }
   .section-top__header {
     @include font-atr(900, 1.36, 0.06em);

@@ -38,9 +38,6 @@
     max-width: 450px;
   }
 
-  &--left {
-    justify-content: flex-start;
-  }
   &__item {
     background-color: $primary-background-color;
     box-shadow: 0px 1px 3px $modal-box-shadow-primary, 0px 1px 1px $modal-box-shadow-secondary,
@@ -75,6 +72,9 @@
   }
   .img-container-secondary {
     height: 440px;
+  }
+  .list--left {
+    justify-content: flex-start;
   }
 }
 
