@@ -10,27 +10,21 @@
 
   &__icon {
     @include set-flex(row);
-    min-width:320px;
+    min-width: 270px;
     max-width: 450px;
     height: 120px;
     background-color: $button-background;
     margin: 0 auto 30px;
-    padding: 25px 0; 
+    padding: 25px 0;
     border-radius: 4px;
   }
   &--gap {
     gap: 10px;
-    // padding-bottom: 30px;
   }
-
-  // &--flex-row {
-  //   @include set-flex(row);
-  //   // padding-bottom: 24px;
-  // }
 
   &__heading {
     font-size: get-size('mobile-small-heading');
-    @include font-atr(700,1.14,0.03em);
+    @include font-atr(700, 1.14, 0.03em);
     text-transform: uppercase;
     text-align: center;
     color: $bolded-text-color;
@@ -38,27 +32,66 @@
   }
   &__description {
     font-size: get-size('mobile-small-text');
-    @include font-atr(400,1.71,0.03em);
+    @include font-atr(400, 1.71, 0.03em);
     padding: 0 15px;
-    // min-width: 320px;
-    // max-width: 450px;
     margin: 0;
+    max-width: 450px;
+  }
+
+  &--left {
+    justify-content: flex-start;
   }
   &__item {
     background-color: $primary-background-color;
-    box-shadow: 0px 1px 3px $modal-box-shadow-primary, 0px 1px 1px $modal-box-shadow-secondary, 0px 2px 1px $modal-background-color;
+    box-shadow: 0px 1px 3px $modal-box-shadow-primary, 0px 1px 1px $modal-box-shadow-secondary,
+      0px 2px 1px $modal-background-color;
     border-radius: 0px 0px 4px 4px;
-    flex-basis: calc((100% - 30px * 3)/ 4);
-    min-width: 320px;
-    max-width: 450px;
   }
   &__position {
     position: relative;
   }
   &__products {
-    // flex-basis: 93.75%;
-    // flex-wrap: wrap;
-    min-width: 320px;
     max-width: 450px;
+  }
+}
+
+@media (min-width: 768px) {
+  .list__icon {
+    width: 354px;
+  }
+  .list__description {
+    width: 354px;
+    padding: 0;
+  }
+  .list__heading {
+    text-align: left;
+    width: 354px;
+  }
+  .list__item {
+    width: 354px;
+  }
+  .list__products {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  .img-container-secondary {
+    height: 440px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .list__products {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  .list__item {
+    width: 270px;
+  }
+  .list__icon {
+    width: 270px;
+  }
+  .list__description {
+    width: 270px;
+  }
+  .list__heading {
+    width: 270px;
   }
 }

@@ -24,9 +24,15 @@
     transform: translateY(32px);
   }
   
-  &:hover .header__icon {
+  &:hover .header__icon-mail {
     fill: $button-icon-color;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill, color;
+    @include vis-effect();
+  }
+
+  &:hover .header__icon-phone {
+    fill: $button-icon-color;
+    transition-property: fill, color;
+    @include vis-effect();
   }
 }

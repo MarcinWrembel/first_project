@@ -13,11 +13,6 @@
   transition-duration: $duration;
   transition-timing-function: $timing;
 }
-// @mixin border-std ($color){
-//     border-style: solid;
-//     border-width: 1px;
-//     border-color: $color;
-// }
 
 @mixin responsive-bg-image($image-width, $image-height) {
   background-size: 100%;

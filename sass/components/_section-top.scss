@@ -1,6 +1,5 @@
 .section-top {
   min-width: 320px;
-  max-width: 480px;
   background-color: $section-background-color;
 
   &__layout {
@@ -38,10 +37,13 @@
     background-image: url(../images/background@2x.jpg);
   }
 }
-// @media (max-width:480px) {
-// .section-top__layout {
-//   width: 480px;
-
-//   margin: 0 auto;
-// }
-// }
+@media (min-width: 1200px) {
+  .section-top__layout {
+    width: 1600px;
+    margin: 0 auto;
+  }
+  .section-top__header {
+    @include font-atr(900, 1.36, 0.06em);
+    font-size: get-size('top-section');
+  }
+}

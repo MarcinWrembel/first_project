@@ -1,11 +1,11 @@
 .menu {
-  display: flex;
+  @include set-flex(row);
   padding: 0;
   width: 100%;
   list-style: none;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .menu {
     display: none;
   }
@@ -59,10 +59,10 @@
     right: 25.33px;
   }
 }
-@media (min-width: 481px) {
-  .menu-toggle {
-    display: none;
-  }
+@media (min-width: 768px) {
+    .menu-toggle {
+      display: none;
+    }
 }
 
 .mobile-menu {
